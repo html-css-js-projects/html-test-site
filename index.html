@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Radoslav Kolev">
+  <meta name="description" content="This page contains all the things I am learning from the HTML tutorial.">
+  <meta name="keywords" content="HTML, Web Developer, Tutorial, Website">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/html5.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
+  <title>HTML Test Website</title>
+</head>
+
+<body>
+  <header>
+    <h1>My Goals For The Year</h1>
+
+    <!-- Anchors -->
+    <nav aria-label="primary-navigation">
+      <ul>
+        <li>
+          <a href="#html">Learn HTML</a>
+        </li>
+        <li>
+          <a href="#vacation">Planning a Vacation</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <!-- Article 1 - HTML -->
+    <article id="html">
+      <h2>I'm ready to learn HTML</h2>
+      <p>This is my first webpage.</p>
+
+      <!-- Section 1 - HTML5 -->
+      <section>
+        <h3>HTML5</h3>
+        <img src="images/html-logo.png" alt="HTML5 Logo" title="HTML5 Logo" width="300" height="300">
+        <figure>
+          <figcaption>An Example of HTML5 Code</figcaption>
+          <p>
+            <code>
+              &lt;h1&gt;Hello World!&lt;/h1&gt;
+            </code>
+          </p>
+        </figure>
+      </section>
+
+      <!-- Section 2 - Daily Schedule -->
+      <section>
+        <h3>My Daily Schedule</h3>
+        <p>Let me tell you how:</p>
+        <ol>
+          <li>...I learn more about the web dev.</li>
+          <li>...I plan out my schedule.</li>
+          <li>...I use resources from
+            <abbr title="Mozilla Developer Network">
+              <a href="https://developer.mozilla.org/" target="_blank">MDN</a>
+            </abbr>.
+          </li>
+        </ol>
+        <!-- Aside content -->
+        <aside>
+          <details>
+            <summary>
+              Guess the <mark>number of hours</mark> I code per day
+            </summary>
+            <p>
+              I start at <time datetime="08:00">8am</time> and I write code for <time datetime="PT3H">3</time> hours until my break. My break starts from <time datetime="11:00">11am</time> till <time datetime="12:00">12pm</time>. After that, I study for other courses until <time datetime="17:00">5pm</time> and then I take a rest.
+            </p>
+          </details>
+        </aside>
+        <br>
+        <!-- Table about schedule -->
+        <table>
+          <caption>My Daily Schedule</caption>
+          <thead>
+            <tr>
+              <!-- <th>&nbsp;</th> -->
+              <th scope="col" colspan="2">Time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8am</time> - <time datetime="11:00">11am</time>
+              </td>
+              <td>Write Code</td>
+            </tr>
+            <tr>
+              <th scope="row">Break</th>
+              <td>
+                <time datetime="11:00">11am</time> - <time datetime="12:00">12pm</time>
+              </td>
+              <td>Eat lunch</td>
+            </tr>
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12pm</time> - <time datetime="17:00">5pm</time>
+              </td>
+              <td>Study for Other Courses</td>
+            </tr>
+            <tr>
+              <th scope="row">Evening</th>
+              <td rowspan="2">All Other Times</td>
+              <td>Free Time</td>
+            </tr>
+            <tr>
+              <th scope="row">Night</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                And that's what I do every day, 5 days a week. Just eat, sleep, code and recharge!
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </article>
+
+    <hr>
+
+    <!-- Article 2 - Vacation -->
+    <article id="vacation">
+      <h2>I'm also planning a vacation</h2>
+      <p>I've been working hard and <em>really need a getaway.</em></p>
+      <p>I live in Varna, so I want to see <strong>the mountains.</strong></p>
+
+      <!-- Section 1 - Places to visit -->
+      <section>
+        <h3>Places I'd like to visit</h3>
+        <ul>
+          <li>
+            <p>I've heard good things about the Caribbean.</p>
+            <figure>
+              <img src="images/caribbean.jpg" alt="Caribbean Beach" title="I want to visit this place" width="400"
+                height="225" loading="lazy">
+              <figcaption>
+                Carribean Beach Getaway
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>I've heard good things about going here</p>
+            <address>
+              Margaritaville Island Reserve Riviera Cancun<br>
+              Bahia Petempich Puerto Morelos, Mexico<br>
+              Colonia Morelos, Mexico 77580
+            </address>
+            <figure>
+              <img src="images/vacation.jpg" alt="Cancoon Vacation" title="It's 5 o'clock somewhere!" width="400"
+                height="267" loading="lazy">
+              <figcaption>
+                Vacation in the Cancoon
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section 2 - Places to NOT visit -->
+      <section>
+        <h3>Places I want to avoid:</h3>
+        <dl>
+          <dt>North Pole</dt>
+          <dd>I hear it's <strong>cold</strong> there!</dd>
+
+          <dt>South Pole</dt>
+          <dd>This is also cold.</dd>
+
+          <dt>Mountain Tops</dt>
+          <dd>These are also cold.</dd>
+        </dl>
+      </section>
+    </article>
+
+    <hr>
+
+    <!-- Article 3 - Contact Form -->
+    <article id="contact">
+      <h2>Contact Me</h2>
+      <p>I'd really like to hear from you!</p>
+
+      <form action="https://httpbin.org/get" method="get">
+        <!-- Fieldset 1 - Main Info -->
+        <fieldset>
+          <legend>Personal Info</legend>
+          <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required autofocus>
+          </p>
+          <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Your secret password" required>
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="0888888888" pattern="[0-9]{10}" required>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+          </p>
+          <p>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" placeholder="Doe" autocomplete="on" required>
+          </p>
+          <p>
+            <label for="myFile">Select a file:</label>
+            <input type="file" name="myFile" id="myFile" placeholder="Doe" autocomplete="on" required>
+          </p>
+          <p>
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+          </p>
+          <p>
+            <label for="decade">Favorite Decade:</label>
+            <input type="number" name="decade" id="decade" min="680" max="2020" step="10" value="1980">
+          </p>
+          <p>
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+          </p>
+          <p>
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+          </p>
+          <p>
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt">
+          </p>
+          <p>
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage">
+          </p>
+          <p>
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week">
+          </p>
+          <p>
+            <label for="coffee">Favorite Coffee:</label>
+            <select name="coffee" id="coffee" multiple size="5">
+              <optgroup label="Coffees">
+                <option value="regular coffee">Regular Coffee</option>
+                <option value="ice coffee">Ice Coffee</option>
+              </optgroup>
+              <optgroup label="Espresso Drinks">
+                <option value="cappuccino" selected>Cappuccino</option>
+                <option value="latte">Latte</option>
+                <option value="mocha">Mocha</option>
+                <option value="espresso">Espresso</option>
+                <option value="cortado">Cortado</option>
+                <option value="americano">Americano</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <!-- <label for="coffee">Favourite Coffee:</label>
+        <input type="text" name="coffee" id="coffee" list="coffee-list">
+        <datalist id="coffee-list">
+          <option value="coffee">
+          <option value="latte">
+          <option value="espresso">
+          <option value="cortado">
+          <option value="americano">
+          <option value="other">
+        </datalist> -->
+          <input type="hidden" id="custId" name="custId" value="3487">
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset 2 - Favorite Food -->
+        <fieldset>
+          <legend>What is your favourite food?</legend>
+          <p>
+            <input type="radio" name="food" id="tacos" value="tacos">
+            <label for="tacos">Tacos</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="pizza" value="pizza">
+            <label for="pizza">Pizza</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="otherFood" value="otherFood">
+            <label for="otherFood">Other</label>
+          </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset 3 - Pets -->
+        <fieldset>
+          <legend>Do you have pets?</legend>
+          <p>
+            <input type="checkbox" name="pets" id="dog" value="dog">
+            <label for="dog">Dog</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="cat" value="cat">
+            <label for="cat">Cat</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="fish" value="fish">
+            <label for="fish">Fish</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+            <label for="otherPet">Other</label>
+          </p>
+        </fieldset>
+        
+        <br>
+
+        <!-- Fieldset 4 - Textarea -->
+        <fieldset>
+          <legend>Send me a note</legend>
+          <label for="message">Your Message:</label>
+          <br>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        <button type="reset">Reset</button>
+      </form>
+    </article>
+  </main>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &lt;&lt;&lt; &copy;
+      <a href="about.html">Radoslav Kolev</a>
+      &copy; &gt;&gt;&gt;
+    </p>
+
+    <p>
+      <a href="#">Back To Top</a>
+    </p>
+  </footer>
+</body>
+</html>
