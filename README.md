@@ -1,7 +1,7 @@
 # HTML Test Page
 This is just a sample HTML page with very little CSS to practice my HTML skills.
 
-Results:
+# Results
 
 Main page:
 ![Main page](https://github.com/html-css-js-projects/html-test-site/blob/master/images/main-1.png)
